@@ -1,4 +1,3 @@
-import os
 from box.exceptions import BoxValueError
 import yaml
 import json
@@ -8,6 +7,9 @@ from pathlib import Path
 from typing import Any
 import base64
 
+import sys
+import os
+sys.path.append(os.path.abspath('./'))
 from src.MLOPS_ImageClassification import logger
 
 
