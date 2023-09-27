@@ -5,7 +5,6 @@ import tensorflow as tf
 from pathlib import Path
 
 import sys
-import os
 sys.path.append(os.path.abspath('./'))
 from src.MLOPS_ImageClassification.config.config_entity import PrepareBaseModelConfig
 
