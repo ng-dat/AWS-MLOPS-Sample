@@ -6,7 +6,7 @@ import time
 
 import sys
 sys.path.append(os.path.abspath('./'))
-from src.MLOPS_ImageClassification.entity.config_entity import PrepareCallbacksConfig
+from src.MLOPS_ImageClassification.config.config_entity import PrepareCallbacksConfig
 
 
 class PrepareCallback:

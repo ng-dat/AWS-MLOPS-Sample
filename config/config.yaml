@@ -1,11 +1,11 @@
 artifacts_root: artifacts
 
-
 data_ingestion:
   root_dir: artifacts/data_ingestion
   source_URL: https://github.com/ng-dat/AWS-MLOPS-Sample/raw/dataset/catvsdog.zip
   local_data_file: artifacts/data_ingestion/data.zip
   unzip_dir: artifacts/data_ingestion
+  data_folder_name: catvsdog
 
 prepare_base_model:
   root_dir: artifacts/prepare_base_model
@@ -15,3 +15,8 @@ prepare_base_model:
 prepare_callbacks:
   root_dir: artifacts/prepare_callbacks
   tensorboard_root_log_dir: artifacts/prepare_callbacks/tensorboard_log_dir
+  checkpoint_model_filepath: artifacts/prepare_callbacks/checkpoint_dir/model.h5
+
+training:
+  root_dir: artifacts/training
+  trained_model_path: artifacts/training/model.h5
